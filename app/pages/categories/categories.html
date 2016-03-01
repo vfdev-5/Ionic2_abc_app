@@ -1,0 +1,85 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Mes choix</ion-title>
+</ion-navbar>
+
+<ion-toolbar text-center>
+  <ion-row>
+    <ion-col width-33>
+      <button clear large
+        (click)="checkAll(true)">
+        Tout
+      </button>
+    </ion-col>
+
+    <ion-col width-33>
+      <button clear large
+        (click)="checkAll(false)">
+        Rien
+      </button>
+    </ion-col>
+
+    <ion-col width-33>
+      <button clear large
+        (click)="reload()">
+        <ion-icon name="refresh"></ion-icon>
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-toolbar>
+
+<ion-content class="categories-page">
+
+  <ion-searchbar primary
+               [(ngModel)]="queryText"
+               (input)="updateCategories()"
+               placeholder="Chercher">
+  </ion-searchbar>
+
+  <ion-list [hidden]="categories === 0">
+
+    <ion-item-group class="category" *ngFor="#category of categories">
+      <ion-item>
+
+        <ion-checkbox item-left
+          [(ngModel)]="category.isChecked"
+          (ngModelChange)="onCategoryCheckStateChanged(category, $event)">
+        </ion-checkbox>
+        <ion-label>{{category.name}}</ion-label>
+        <button item-right clear (click)="category.expanded=!category.expanded">
+          <ion-icon name="arrow-down" [hidden]="category.expanded"></ion-icon>
+          <ion-icon name="arrow-back" [hidden]="!category.expanded"></ion-icon>
+        </button>
+      </ion-item>
+
+      <ion-list [hidden]="!category.expanded">
+        <ion-item class="subcategory" *ngFor="#subcategory of category.subcategories">
+          <ion-label>{{ subcategory.name }}</ion-label>
+          <ion-checkbox item-left
+            [(ngModel)]="subcategory.isChecked"
+            (ngModelChange)="onSubCategoryCheckStateChanged(category, subcategory, $event)">
+          </ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </ion-item-group>
+
+  </ion-list>
+
+  <ion-list-header [hidden]="categories.length > 0">
+      Pas de catégories trouvées
+  </ion-list-header>
+
+</ion-content>
+
+<ion-toolbar position="bottom">
+  <ion-item-divider>
+    Found 5 promotions
+  </ion-item-divider>
+</ion-toolbar>
+<ion-toolbar position="bottom">
+  <button secondary block>
+    Sauvegarder
+  </button>
+</ion-toolbar>

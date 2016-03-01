@@ -1,0 +1,49 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Promotions du moment</ion-title>
+</ion-navbar>
+
+<ion-content class="map-page">
+  <div id="map"></div>
+
+  <ion-item>
+    Il y a {{ promotions.length }} promotions à côté de vous
+  </ion-item>
+
+  <ion-card *ngFor="#promotion of promotions">
+
+    <ion-item>
+      <h2>{{promotion.shop.name}}</h2>
+    </ion-item>
+
+    <img src="{{promotion.shop.logo}}">
+
+    <!-- <button fab fab-right fab-top>
+      <ion-icon name="pin"></ion-icon>
+    </button> -->
+
+    <ion-card-content>
+      <p>{{promotion.name}}</p>
+    </ion-card-content>
+
+    <ion-item>
+      <ion-icon name="promotion.category.icon" item-left large></ion-icon>
+      <h2>{{ promotion.shop.name }}</h2>
+      <p> ~~Shop address~~</p>
+    </ion-item>
+
+    <ion-item>
+      <span item-left>18 min</span>
+      <span item-left>(2.6 mi)</span>
+      <button primary clear item-right>
+        <ion-icon name="navigate"></ion-icon>
+        Start
+      </button>
+    </ion-item>
+
+  </ion-card>
+
+
+</ion-content>

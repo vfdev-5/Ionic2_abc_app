@@ -1,0 +1,265 @@
+{
+  "categories": [
+    {
+      "name": "BEAUTE / BIEN ETRE",
+      "subcategories" : [
+        {
+          "name": "COIFFURE"
+        },
+        {
+          "name": "TATOUAGE / PIERCING"
+        },
+        {
+          "name": "EPILATION"
+        },
+        {
+          "name": "MASSAGE"
+        },
+        {
+          "name": "SOIN DU CORPS / VISAGE"
+        },
+        {
+          "name": "PARAPHARMACIE"
+        },
+        {
+          "name": "UV"
+        },
+        {
+          "name": "SPA / HAMMAM/ SAUNA"
+        },
+        {
+          "name": "MAQUILLAGE"
+        },
+        {
+          "name": "PARFUMERIE"
+        },
+        {
+          "name": "NAIL-BAR"
+        },
+        {
+          "name": "FITNESS"
+        }
+      ]
+    },
+    {
+      "name": "BEBE / ENFANT",
+      "subcategories" : [
+        {
+          "name": "PUERICULTURE"
+        },
+        {
+          "name": "VETEMENTS"
+        },
+        {
+          "name": "ACCESSOIRES"
+        },
+        {
+          "name": "SPECTACLE"
+        },
+        {
+          "name": "JOUET"
+        }
+      ]
+    },
+    {
+      "name": "MODE / HABILLEMENT",
+      "subcategories": [
+        {
+          "name": "VETEMENTS FEMME"
+        },
+        {
+          "name": "VETEMENTS HOMME"
+        },
+        {
+          "name": "VETEMENTS ENFANT"
+        },
+        {
+          "name": "CHAUSSURE"
+        },
+        {
+          "name": "BIJOUTERIE / MONTRE/ BIJOUTERIE ENFANT"
+        },
+        {
+          "name": "ACCESSOIRES/ SACS/ BAGAGES"
+        },
+        {
+          "name": "LUNETTES"
+        }
+      ]
+    },
+    {
+      "name": "SPORT",
+      "subcategories": [
+        {
+          "name": "SPORT NAUTIQUES"
+        },
+        {
+          "name": "SPORT MONTAGNE"
+        },
+        {
+          "name": "SPORT COLLECTIF"
+        },
+        {
+          "name": "SPORT INDIVIDUEL"
+        },
+        {
+          "name": "EQUITATION"
+        },
+        {
+          "name": "SPORT MECANIQUE"
+        },
+        {
+          "name": "SPORT EXTREME"
+        },
+        {
+          "name": "FITNESS"
+        }
+      ]
+    },
+    {
+      "name": "AUTO/MOTO",
+      "subcategories": [
+        {
+          "name": "ENTRETIEN"
+        },
+        {
+          "name": "TUNNING"
+        },
+        {
+          "name": "ACCESSOIRES / PIECES DETACHEES"
+        },
+        {
+          "name": "NETTOYAGE"
+        },
+        {
+          "name": "VENTE DE VEHICULE"
+        },
+        {
+          "name": "LOCATION"
+        }
+      ]
+    },
+    {
+      "name": "HABITAT",
+      "subcategories": [
+        {
+          "name": "DECORATION"
+        },
+        {
+          "name": "ELECTROMENAGERS"
+        },
+        {
+          "name": "BRICOLAGE"
+        },
+        {
+          "name": "JARDINAGE/ NATURE"
+        },
+        {
+          "name": "TV/HIFI/AUDIO"
+        }
+      ]
+    },
+    {
+      "name": "CULTURE / LOISIR",
+      "subcategories": [
+        {
+          "name": "SPECTACLE/ CONCERT"
+        },
+        {
+          "name": "RESTAURANTS"
+        },
+        {
+          "name": "BARS"
+        },
+        {
+          "name": "ART/EXPO/MUSÉE"
+        },
+        {
+          "name": "VOYAGES"
+        },
+        {
+          "name": "ANIMAUX"
+        },
+        {
+          "name": "JEUX / JEUX VIDEO/ JOUETS"
+        },
+        {
+          "name": "MUSIQUE"
+        },
+        {
+          "name": "LECTURE"
+        },
+        {
+          "name": "PHOTOGRAPHIE"
+        },
+        {
+          "name": "ACTIVITE PLEIN AIR"
+        },
+        {
+          "name": "GASTRONOMIE / CUISINE"
+        }
+      ]
+    },
+    {
+      "name": "HIGH-TECH / NOUVELLES TECHNOLOGIES",
+      "subcategories": [
+        {
+          "name": "LOGICIEL / JEUX VIDEO"
+        },
+        {
+          "name": "TELEPHONIE"
+        },
+        {
+          "name": "INFORMATIQUE"
+        },
+        {
+          "name": "IMAGE / VIDEO"
+        },
+        {
+          "name": "SON"
+        },
+        {
+          "name": "IMPRESSION"
+        }
+      ]
+    },
+    {
+      "name": "SERVICE PROXIMITÉ",
+      "subcategories": [
+        {
+          "name": "PRESSING"
+        },
+        {
+          "name": "COIFFEUR"
+        },
+        {
+          "name": "BOULANGERIE/ PATISSERIE"
+        },
+        {
+          "name": "BOUCHERIE/ CHARCUTERIE"
+        },
+        {
+          "name": "OPTIQUE"
+        },
+        {
+          "name": "TOILETAGE/ ANIMALERIE/ ACCESSOIRE"
+        },
+        {
+          "name": "ESTHETICIENNE"
+        },
+        {
+          "name": "RESTAURANT"
+        },
+        {
+          "name": "PRIMEUR"
+        },
+        {
+          "name": "FLEURISTE"
+        },
+        {
+          "name": "BIO"
+        }
+      ]
+    }
+  ]
+}

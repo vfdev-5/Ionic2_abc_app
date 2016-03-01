@@ -1,0 +1,37 @@
+<!--<ion-navbar *navbar>-->
+  <!--<ion-buttons end *ngIf="showSkip">-->
+    <!--<button large (click)="startApp()">Skip</button>-->
+  <!--</ion-buttons>-->
+<!--</ion-navbar>-->
+
+<ion-content>
+
+  <div *ngIf="showSkip">
+    <button large clear (click)="startApp()">Skip</button>
+  </div>
+
+  <ion-slides pager (slideChangeStart)="onSlideChangeStart($event)">
+
+    <ion-slide *ngFor="#slide of slides">
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+
+
+    <!--Last slide-->
+    <ion-slide>
+      <img src="img/slidebox-img-2.jpg" class="slide-image"/>
+      <h2 class="slide-title">Prêt à commencer?</h2>
+      <button large clear (click)="startApp()">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+
+
+
+
+</ion-content>

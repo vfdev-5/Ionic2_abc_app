@@ -1,0 +1,84 @@
+{
+  "promotions": [
+    {
+      "notification_date": "2016-02-25T09:32:33",
+      "emission_date": "2016-02-25T12:00:00",
+      "expiration_date": "2016-03-25T14:00:00",
+      "name": "Super promotions pour la coiffure! Reductions de 10% pour tous!!! Venez aujourd'hui entre 12 et 14!",
+      "shop": {
+        "name": "Coiffure chez Sofie",
+        "lat": 43.600274,
+        "lng": 1.444273,
+        "logo": "http://randomimage.setgetgo.com/get.php?key=1&height=100&width=100&type="
+      },
+      "category": {
+        "icon": "SERVICE_NEAR",
+        "name": "SERVICE PROXIMITÉ"
+      },
+      "subcategory": {
+        "icon": "HAIRDRESSING",
+        "name": "COIFFEUR"
+      }
+    },
+    {
+      "notification_date": "2016-02-15T17:32:33",
+      "emission_date": "2016-02-2T18:00:00",
+      "expiration_date": "2016-03-25T19:00:00",
+      "name": "Promotions sur les courgettes bio! Seulement 2 euros/piece! Bio-Scoop Rangueil",
+      "shop": {
+        "name": "Grandeur Nature",
+        "lat": 43.573860,
+        "lng": 1.452037,
+        "logo": "http://randomimage.setgetgo.com/get.php?key=2&height=100&width=100&type="
+      },
+      "category": {
+        "icon": "SERVICE_NEAR",
+        "name": "SERVICE PROXIMITÉ"
+      },
+      "subcategory": {
+        "icon": "BIO",
+        "name": "BIO"
+      }
+    },
+    {
+      "notification_date": "2016-02-23T20:32:33",
+      "emission_date": "2016-02-25T09:00:00",
+      "expiration_date": "2016-02-25T14:00:00",
+      "name": "Super promotion sur les baskets!!! Toutes les tailles a 15 euros",
+      "shop": {
+        "name": "ChaussureLand",
+        "lat": 43.597381,
+        "lng": 1.454369,
+        "logo": "http://randomimage.setgetgo.com/get.php?key=3&height=100&width=100&type="
+      },
+      "category": {
+        "icon": "FASHION_CLOTHES",
+        "name": "MODE / HABILLEMENT"
+      },
+      "subcategory": {
+        "icon": "SHOES",
+        "name": "CHAUSSURE"
+      }
+    },
+    {
+      "notification_date": "2016-02-25T12:32:33",
+      "emission_date": "2016-02-28T10:00:00",
+      "expiration_date": "2016-03-15T19:00:00",
+      "name": "Promo sur les spectacles",
+      "shop": {
+        "name": "Opera Toulouse",
+        "lat": 43.604652,
+        "lng": 1.444209,
+        "logo": "http://randomimage.setgetgo.com/get.php?key=4&height=100&width=100&type="
+      },
+      "category": {
+        "icon": "SERVICE_NEAR",
+        "name": "SERVICE PROXIMITÉ"
+      },
+      "subcategory": {
+        "icon": "HAIRDRESSING",
+        "name": "Coiffeur"
+      }
+    }
+  ]
+}
