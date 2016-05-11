@@ -16,7 +16,7 @@ export class UserData {
     this.events = events;
     this.HAS_LOGGED_IN = 'hasLoggedIn';
   }
-  
+
   login(username, password) {
     this.storage.set(this.HAS_LOGGED_IN, true);
     this.events.publish('user:login');
@@ -35,9 +35,10 @@ export class UserData {
 
   // return a promise
   hasLoggedIn() {
-    return this.storage.get(this.HAS_LOGGED_IN).then((value) => {
-      return value;
-    });
+    return this.storage.get(this.HAS_LOGGED_IN);
+    // .then((value) => {
+    //   return value;
+    // });
   }
 
   // get username :

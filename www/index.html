@@ -8,6 +8,11 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
 
+  <!-- https://github.com/apache/cordova-plugin-whitelist -->
+  <!-- Allow everything but only from the same origin -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"> -->
+  <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+
   <link ios-href="build/css/app.ios.css" rel="stylesheet">
   <link md-href="build/css/app.md.css" rel="stylesheet">
 </head>
@@ -16,10 +21,11 @@
   <ion-app></ion-app>
 
   <script src="cordova.js"></script>
+  <!-- Zone.js and Reflect-metadata  -->
+  <script src="build/js/angular2-polyfills.js"></script>
+  <!-- the bundle which is built from the app's source code -->
   <script src="build/js/app.bundle.js"></script>
 
-  <!-- google maps script is loaded last as to not block rendering -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACca0tYFwWVfB_dMtUziBlCKBA4_ez35Q&libraries=drawing"></script>
 </body>
 
 </html>

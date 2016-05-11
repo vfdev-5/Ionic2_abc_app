@@ -1,10 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>V2 Test</name>
-    <description>An Ionic Framework and Cordova project.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget id="fr.ionic.nirioo" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Nirioo v0.1</name>
+    <description>Nirioo is really near you</description>
+    <author email="vfdev@gmail.com" href="">Nirioo Dev Team</author>
     <content src="index.html" />
     <access origin="*" />
+    <!-- https://github.com/apache/cordova-plugin-whitelist -->
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
+
+    <!-- Access to the subdomain maps.google.com -->
+    <access origin="http://maps.google.com" />
+    <!-- Access to all the subdomains on google.com -->
+    <access origin="http://*.google.com" />
+    
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />

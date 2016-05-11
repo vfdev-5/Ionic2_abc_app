@@ -1,6 +1,8 @@
+// See https://forum.ionicframework.com/t/ionic-2-projects-updating-to-beta-4/49054
+import 'es6-shim';
 // Ionic & Cordova
 import {App, IonicApp, Platform, Events} from 'ionic-framework/ionic';
-import {PushNotification} from 'phonegap-plugin-push';
+import {Push} from 'ionic-native';
 
 
 // Moment
@@ -34,14 +36,13 @@ export class MyApp {
     //moment.locale("fr");
     //console.log("Moments locale : " + moment.locale());
 
-
     this.app = app;
     this.events = events;
     this.userData = userData;
     this.rootPage = TabsPage;
 
     // load promotions
-    promotionsData.get();
+    // promotionsData.get();
 
     platform.ready().then(() => {
       // The platform is now ready. Note: if this callback fails to fire, follow
@@ -120,12 +121,13 @@ export class MyApp {
     });
   }
 
-  setupPushNotifications() {
 
-    let push = PushNotification.init({
+  // ****** PUSH NOTIFICATION **********************
+
+  setupPushNotifications() {
+    let push = Push.init({
       android: {
-        senderID: "dogwood-day-115215", // maps to the project number in the Google Developer Console
-        sound: true,
+        senderID: "681347562269", // maps to the project number in the Google Developer Console
       },
       ios: {
           alert: true,
@@ -150,7 +152,6 @@ export class MyApp {
     push.on('error', (e) => {
       console.log(e.message);
     });
-
   }
 
 
